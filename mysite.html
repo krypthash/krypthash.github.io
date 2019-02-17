@@ -1,0 +1,63 @@
+<html>
+
+<head>
+
+</head>
+
+<body>
+    <div>
+
+        --------------------------------------------------------------------------------
+        <br>
+        WORPRESS 5.0 requirements: php7.0 php5.6<br>
+
+        sudo apt-get install python-software-properties<br>
+        sudo add-apt-repository ppa:ondrej/php<br>
+        sudo apt-get update<br>
+        <br>
+        sudo apt-get install php5.6-mbstring<br>
+        php-common<br>
+        php7.0<br>
+        php7.0-cli<br>
+        php7.0-common<br>
+        php7.0-fpm<br>
+        php7.0-json<br>
+        php7.0-mbstring<br>
+        php7.0-opcache<br>
+        php7.0-readline<br>
+        php7.0-mysqli<br>
+        php5.6-mysql<br>
+        <br>
+        --------------------------------------------------------------------------------<br>
+        MYSQL:<br>
+
+        GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'ojai1983';<br>
+        CREATE USER 'admin'@'%' IDENTIFIED BY 'ojai1983';<br>
+        GRANT ALL PRIVILEGES ON * . * TO 'admin'@'%' IDENTIFIED BY 'ojai1983';<br>
+        FLUSH PRIVILEGES;<br>
+        <br>
+        For remote connection, edit to bind-address:0.0.0.0<br>
+        in sudo nano /etc/mysql/mysql.conf.d/mysqld.cnf<br>
+        <br>
+        ---------------------------------------------------------------------------------<br>
+        <br>
+        <br>
+        WORDPRESS:<br>
+        Plugin installation FTP connection information.<br>
+        <br>
+        edit or add in wp-config.php<br>
+        <br>
+        define('FS_METHOD','direct');<br>
+        <br>
+        <br>
+        ----------------------------------------------------------------------------------<br>
+        <br>
+        FTP folder permission:<br>
+        <br>
+        sudo chmod -R 777 /path username<br>
+        <br>
+        ----------------------------------------------------------------------------------</br>
+    </div>
+</body>
+
+</html>
